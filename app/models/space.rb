@@ -17,7 +17,7 @@ class Space < ActiveRecord::Base
     months = month
     weeks = (day - month*30)/7
     days = day - (weeks*7) - (month*30)
-    price =  (months*self.price_per_month) + (weeks*self.price_per_week) +
-      (days*self.price_per_day)
+    price =  (months*price_per_month) + (weeks*price_per_week) +
+      (days*price_per_day)
   end
 end
