@@ -1,0 +1,17 @@
+type: Object
+items:
+  type: Object
+  required:
+    - title
+    - city
+    - street
+    - spaces_count
+  properties:
+    title:
+      type: string
+    city:
+      type: string
+    street:
+      type: string
+    spaces_count:
+      type: integer

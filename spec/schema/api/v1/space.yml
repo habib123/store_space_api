@@ -1,0 +1,23 @@
+type: Object
+items:
+  type: Object
+  required:
+    - store
+    - title
+    - size
+    - price_per_day
+    - price_per_week
+    - price_per_month
+  properties:
+    store:
+      type: string
+    title:
+      type: string
+    size:
+      type: integer
+    price_per_day:
+      type: decimal
+    price_per_week:
+      type: decimal
+    price_per_month:
+      type: decimal

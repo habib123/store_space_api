@@ -1,0 +1,35 @@
+All CRUD endpoints for stores and spaces are implemented
+	The store and Space model contains following attributes
+	Store attributes: id (uuid), title, city, street, spaces_count, created_at, updated_at
+
+	Space attributes: id (uuid), store, title, size, price_per_day, price_per_week, price_per_month, created_at, updated_at
+
+	To filter the entries via a GET filter for every attribute
+	Example:
+	Multiple filter can be done as followings:
+	1.GET /stores?title=like:Center
+-> return all the rows which contains title like Cneter
+	2. GET /stores?title=like:Center&space_count=lt:20  -> return all the rows which contains both title with Center and space_count less then 20
+	Keywords to SQL: eq => =, like => ILIKE, gt => >, lt => <
+
+	Add an endpoint to get a price quote for a space
+	GET /spaces/:id/price/:start_date/:end_date
+-> return price based on start_date and end_date and calculation base on various price schema
+	Considered the different prices
+
+	Assume the store is open all days
+
+	A month is 30 days
+
+
+How to run:
+-> bundle install
+
+* Database creation
+-> rake db:migrate
+
+* Database initialization
+-> rake db:seed
+
+* How to run the test suite
+-> rspec
