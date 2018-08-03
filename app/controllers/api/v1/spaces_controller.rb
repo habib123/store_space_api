@@ -6,7 +6,7 @@ class Api::V1::SpacesController < Api::V1::BaseController
   end
 
   def create
-    respond_with :api, :v1, Space.create!(space_params)
+    respond_with :api, Space.create!(space_params)
   end
 
   def show

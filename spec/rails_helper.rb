@@ -10,7 +10,7 @@ require 'factory_girl_rails'
 
 API_V1_HEADERS = {
   'Content-Type': 'application/json; charset=utf-8',
-  'Accept': 'application/json'
+  'Accept' => 'application/vnd.store2be.api.v1+json'
 }
 # Add additional requires below this line. Rails is not loaded until this point!
 

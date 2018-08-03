@@ -6,7 +6,7 @@ class Api::V1::StoresController < Api::V1::BaseController
   end
 
   def create
-    respond_with :api, :v1, Store.create!(store_params)
+    respond_with :api, Store.create!(store_params)
   end
 
   def show
