@@ -9,7 +9,6 @@ class ApiConstraints
 
   def initialize(version:)
     @version = version
-
     # Prevent invalid version numbers in routes
     raise ArgumentError.new(errors.full_messages) unless valid?
   end

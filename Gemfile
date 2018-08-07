@@ -25,7 +25,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'nokogiri', '~> 1.8.4'
 gem 'responders', '~> 2.0'
-gem 'database_cleaner'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

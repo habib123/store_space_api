@@ -5,7 +5,7 @@ class Api::V1::BaseController < ApplicationController
   before_action :check_accept_header
   before_action :check_content_type_header, only: %i(create update)
 
-  respond_to :json
+  respond_to :json, :html
   rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_response
   rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
 
